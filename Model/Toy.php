@@ -6,9 +6,9 @@ class Toy extends Product{
   public $ecoFriendly;
   public $weight;
 
-  public function __construct(string $_name,int $_price,string $_type, array $_material, bool $_ecoFriendly, float $_weight)
+  public function __construct(string $_name,float $_price,string $_type, string $_img, array $_material, bool $_ecoFriendly, float $_weight)
   {
-     parent::__construct($_name, $_price, $_type);
+     parent::__construct($_name, $_price, $_type, $_img);
     
      $this->material= $_material;
      $this->ecoFriendly= $_ecoFriendly;

@@ -1,9 +1,14 @@
 <?php
 require_once __DIR__.'/Model/Product.php';
+require_once __DIR__.'/Model/food.php';
 
 $product = new Product('osso', 7, 'cane');
 
+$food = new Food('carne', 3,'cane', ['carne','sale', 'verdure'], false);
+
 var_dump($product);
+var_dump($food);
+
 
 ?>
 

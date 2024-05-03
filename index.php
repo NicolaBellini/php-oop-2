@@ -1,13 +1,18 @@
 <?php
 require_once __DIR__.'/Model/Product.php';
 require_once __DIR__.'/Model/food.php';
+require_once __DIR__.'/Model/Toy.php';
 
 $product = new Product('osso', 7, 'cane');
 
 $food = new Food('carne', 3,'cane', ['carne','sale', 'verdure'], false);
 
+$toy = new Toy('corda', 4, 'gatto', ['plastica', 'cotone'], true, 300);
+
 var_dump($product);
 var_dump($food);
+var_dump($toy);
+
 
 
 ?>

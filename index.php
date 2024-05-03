@@ -64,6 +64,8 @@ foreach ($products as $category => $categoryProducts) {
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <link rel="stylesheet" href="assets/style.css">
   
@@ -80,6 +82,7 @@ foreach ($products as $category => $categoryProducts) {
          <?php foreach($formattedToys as $product): ?>
 
             <div class="swiper-slide">
+              
               <div class="card  my_card" style="width: 18rem;">
                 <img src="<?php echo $product->img ?>" class="card-img-top h-50 my_img" alt="...">
                 <div class="card-body">
@@ -92,7 +95,17 @@ foreach ($products as $category => $categoryProducts) {
                     <?php echo "Weight: " . $product->weight . "<br>"; ?>
                   </p>
                 </div>
+                <div class="my_badge">
+                  <?php 
+                  if($product->type == 'cane'){
+                    echo '<i class="fa-solid fa-dog"></i>';
+                  } elseif($product->type == 'gatto'){
+                    echo '<i class="fa-solid fa-cat"></i>';
+                  }
+                  ?>
+                </div>
               </div>
+            
             </div>
         
           <?php endforeach ?>
@@ -107,18 +120,29 @@ foreach ($products as $category => $categoryProducts) {
         <?php foreach($formattedFoods as $product): ?>
 
           <div class="swiper-slide">
-                <div class="card  my_card" style="width: 18rem;">
-              <img src="<?php echo $product->img ?>" class="card-img-top h-50 my_img" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"><?php echo $product->name; ?></h5>
-                <p class="card-text">
-                  <?php echo "Price: $" . $product->price . "<br>"; ?>
-                  <?php echo "Type: " . $product->type . "<br>"; ?>
-                  <?php echo "Ingredients: " . implode(", ", $product->ingredients) . "<br>"; ?>
-                  <?php echo "Vegan: " . ($product->vegan ? "Yes" : "No") . "<br>"; ?>
-                </p>
-              </div>
+          
+            <div class="card  my_card" style="width: 18rem;">
+                <img src="<?php echo $product->img ?>" class="card-img-top h-50 my_img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><?php echo $product->name; ?></h5>
+                  <p class="card-text">
+                    <?php echo "Price: $" . $product->price . "<br>"; ?>
+                    <?php echo "Type: " . $product->type . "<br>"; ?>
+                    <?php echo "Ingredients: " . implode(", ", $product->ingredients) . "<br>"; ?>
+                    <?php echo "Vegan: " . ($product->vegan ? "Yes" : "No") . "<br>"; ?>
+                  </p>
+                </div>
+                <div class="my_badge">
+                    <?php 
+                    if($product->type == 'cane'){
+                        echo '<i class="fa-solid fa-dog"></i>';
+                    } elseif($product->type == 'gatto'){
+                        echo '<i class="fa-solid fa-cat"></i>';
+                    }
+                    ?>
+                </div>
             </div>
+    
           </div>
         
         <?php endforeach ?>

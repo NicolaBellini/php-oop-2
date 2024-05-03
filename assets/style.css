@@ -1,0 +1,10 @@
+img {
+  object-fit: cover;
+}
+
+.my_card {
+  height: 400px !important;
+}
+h5 {
+  color: red !important;
+}

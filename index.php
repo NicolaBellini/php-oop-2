@@ -2,16 +2,39 @@
 require_once __DIR__.'/Model/Product.php';
 require_once __DIR__.'/Model/food.php';
 require_once __DIR__.'/Model/Toy.php';
+require_once __DIR__.'/DB/Data.php';
 
-$product = new Product('osso', 7, 'cane');
+// $product = new Product('osso', 7, 'cane');
 
-$food = new Food('carne', 3,'cane', ['carne','sale', 'verdure'], false);
+// $food = new Food('carne', 3,'cane', ['carne','sale', 'verdure'], false);
 
-$toy = new Toy('corda', 4, 'gatto', ['plastica', 'cotone'], true, 300);
+// $toy = new Toy('corda', 4, 'gatto', ['plastica', 'cotone'], true, 300);
 
-var_dump($product);
-var_dump($food);
-var_dump($toy);
+// var_dump($product);
+// var_dump($food);
+// var_dump($toy);
+
+// Stampa delle informazioni dei prodotti
+foreach ($database["products"] as $category => $products) {
+    echo strtoupper($category) . ":<br>";
+    foreach ($products as $product) {
+        echo "-Nome: " . $product["name"] . ", Price: $" . $product["price"] . ", Type: " . $product["type"];
+        if (isset($product["material"])) {
+            echo ", Material: " . implode(", ", $product["material"]);
+        }
+        if (isset($product["ecoFriendly"])) {
+            echo ", Eco-Friendly: " . ($product["ecoFriendly"] ? "Yes" : "No");
+        }
+        if (isset($product["weight"])) {
+            echo ", Weight: " . $product["weight"];
+        }
+        if (isset($product["ingredients"])) {
+            echo ", Ingredients: " . implode(", ", $product["ingredients"]);
+        }
+        echo "<br>";
+    }
+    echo "<br>";
+}
 
 
 

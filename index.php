@@ -1,3 +1,13 @@
+<?php
+require_once __DIR__.'/Model/Product.php';
+
+$product = new Product('osso', 7, 'cane');
+
+var_dump($product);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,5 +22,7 @@
 </head>
 <body>
   
+
+
 </body>
 </html>

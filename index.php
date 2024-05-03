@@ -74,7 +74,7 @@ foreach ($products as $category => $categoryProducts) {
 
 <body>
 
-<div class="container d-flex flex-wrap p-3 justify-content-center">
+<div class="container-fluid d-flex flex-wrap p-3 justify-content-center">
   <h2>TOYS</h2>
   <!-- div toys -->
      <div class="swiper mySwiper">
@@ -113,7 +113,7 @@ foreach ($products as $category => $categoryProducts) {
       
     </div>
 
-  <H2>FOODS</H2>
+  <h2>FOODS</h2>
   <!-- div foods -->
      <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -165,8 +165,8 @@ foreach ($products as $category => $categoryProducts) {
 
 <script>
     const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 2,
+      spaceBetween: 70,
 
      
     });

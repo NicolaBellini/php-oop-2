@@ -7,7 +7,7 @@ $products = [
                 "name" => "Giocattolo per Cani",
                 "price" => 9.99,
                 "type" => "cane",
-                "material" => ["gomma"],
+                "material" => ["gomma","pelle"],
                 "ecoFriendly" => true,
                 "weight" => 0.1,
                 "img"=>"https://images.unsplash.com/photo-1559715541-5daf8a0296d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGdpb2NvJTIwcGVyJTIwY2FuZXxlbnwwfHwwfHx8MA%3D%3D"
@@ -22,7 +22,7 @@ $products = [
                   "img"=>"https://images.unsplash.com/photo-1554591203-3c8b71297add?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJhbGx8ZW58MHx8MHx8fDA%3D"
             ]
         ],
-     "foods" => [
+        "foods" => [
             [
                 "name" => "Osso",
                 "price" => 7.99,

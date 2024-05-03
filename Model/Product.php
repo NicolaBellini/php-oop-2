@@ -16,7 +16,7 @@ class Product{
   }
 
   public function getProductInfo(){
-    return "$this->name,$this->price,$this->type,";
+    return "$this->name,$this->price,$this->type";
   }
 
 }

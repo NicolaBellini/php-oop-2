@@ -75,46 +75,33 @@ foreach ($products as $category => $categoryProducts) {
 <div class="container d-flex flex-wrap p-3 justify-content-center">
   <h2>TOYS</h2>
   <!-- div toys -->
-
-  
-  
-    
-
-      
      <div class="swiper mySwiper">
       <div class="swiper-wrapper">
          <?php foreach($formattedToys as $product): ?>
 
-          <div class="swiper-slide">
-          <div class="card  my_card" style="width: 18rem;">
-      <img src="<?php echo $product->img ?>" class="card-img-top h-50 my_img" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"><?php echo $product->name; ?></h5>
-        <p class="card-text">
-          <?php echo "Price: $" . $product->price . "<br>"; ?>
-          <?php echo "Type: " . $product->type . "<br>"; ?>
-          <?php echo "Material: " . implode(", ", $product->material) . "<br>"; ?>
-          <?php echo "Eco-Friendly: " . ($product->ecoFriendly ? "Yes" : "No") . "<br>"; ?>
-          <?php echo "Weight: " . $product->weight . "<br>"; ?>
-        </p>
-      </div>
-    </div>
-          </div>
+            <div class="swiper-slide">
+              <div class="card  my_card" style="width: 18rem;">
+                <img src="<?php echo $product->img ?>" class="card-img-top h-50 my_img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><?php echo $product->name; ?></h5>
+                  <p class="card-text">
+                    <?php echo "Price: $" . $product->price . "<br>"; ?>
+                    <?php echo "Type: " . $product->type . "<br>"; ?>
+                    <?php echo "Material: " . implode(", ", $product->material) . "<br>"; ?>
+                    <?php echo "Eco-Friendly: " . ($product->ecoFriendly ? "Yes" : "No") . "<br>"; ?>
+                    <?php echo "Weight: " . $product->weight . "<br>"; ?>
+                  </p>
+                </div>
+              </div>
+            </div>
         
-   <?php endforeach ?>
+          <?php endforeach ?>
       </div>
       
     </div>
 
-
-    
-
-
-
   <H2>FOODS</H2>
   <!-- div foods -->
-
-   
      <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <?php foreach($formattedFoods as $product): ?>
@@ -154,7 +141,7 @@ foreach ($products as $category => $categoryProducts) {
 
 <script>
     const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1.8,
+      slidesPerView: 3,
       spaceBetween: 30,
 
      

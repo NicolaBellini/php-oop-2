@@ -1,23 +1,25 @@
 <?php 
 
-$database = [
-    "products" => [
+$products = [
+    
         "toys" => [
-            [
-                "name" => "Peluche",
-                "price" => 19.99,
-                "type" => "Orso",
-                "material" => ["peluche"],
+           [
+                "name" => "Giocattolo per Cani",
+                "price" => 9.99,
+                "type" => "cane",
+                "material" => ["gomma"],
                 "ecoFriendly" => true,
-                "weight" => 0.2
+                "weight" => 0.1,
+                "img"=>"https://images.unsplash.com/photo-1559715541-5daf8a0296d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGdpb2NvJTIwcGVyJTIwY2FuZXxlbnwwfHwwfHx8MA%3D%3D"
             ],
-            [
-                "name" => "Macchinina",
-                "price" => 14.99,
-                "type" => "Auto",
-                "material" => ["plastica", "metallo"],
-                "ecoFriendly" => false,
-                "weight" => 0.3
+             [
+                "name" => "Pallina Rimbalzante",
+                "price" => 5.99,
+                "type" => "gatto",
+                "material" => ["gomma"],
+                "ecoFriendly" => true,
+                "weight" => 0.05,
+                  "img"=>"https://images.unsplash.com/photo-1554591203-3c8b71297add?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJhbGx8ZW58MHx8MHx8fDA%3D"
             ]
         ],
      "foods" => [
@@ -26,29 +28,33 @@ $database = [
                 "price" => 7.99,
                 "type" => "Cane",
                 "vegan" => false,
-                "ingredients" => ["carne di manzo", "farina"]
+                "ingredients" => ["osso di manzo"],
+                  "img"=>"https://images.unsplash.com/photo-1535294435445-d7249524ef2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZG9nJTIwYm9uZXxlbnwwfHwwfHx8MA%3D%3D"
             ],
             [
                 "name" => "Croccantini",
                 "price" => 12.49,
                 "type" => "Cane",
                 "vegan" => false,
-                "ingredients" => ["carne di pollo", "riso"]
+                "ingredients" => ["carne di pollo", "riso"],
+                  "img"=>"https://images.unsplash.com/photo-1658418205277-6baf0f57b191?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y3JvY2NhbnRpbml8ZW58MHx8MHx8fDA%3D"
             ],
             [
                 "name" => "Tonno",
                 "price" => 4.99,
                 "type" => "Gatto",
                 "vegan" => false,
-                "ingredients" => ["tonno", "brodo di pesce"]
+                "ingredients" => ["tonno", "brodo di pesce"],
+                  "img"=>"https://images.unsplash.com/photo-1622756144420-6877b1b7476e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRvbm5vfGVufDB8fDB8fHww"
             ],
-            [
-                "name" => "Semi di girasole",
-                "price" => 3.99,
-                "type" => "Uccello",
-                "vegan" => true,
-                "ingredients" => ["semi di girasole"]
+              [
+                "name" => "Pasticcini per Gatti",
+                "price" => 8.49,
+                "type" => "Gatto",
+                "vegan" => false,
+                "ingredients" => ["carne di pollo", "grano", "erbe aromatiche"],
+                  "img"=>"https://images.unsplash.com/photo-1577349516274-37ff88a53627?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0JTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D"
             ]
         ]
-    ]
+    
 ];

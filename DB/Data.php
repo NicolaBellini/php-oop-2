@@ -6,7 +6,7 @@ $products = [
            [
                 "name" => "Giocattolo per Cani",
                 "price" => 9.99,
-                "discount" => 0,
+                "discount" => 0.2,
                 "type" => "cane",
                 "material" => ["gomma","pelle"],
                 "ecoFriendly" => true,
@@ -26,7 +26,7 @@ $products = [
               [
                 "name" => "Giostra per Gatti",
                 "price" => 12.99,
-                "discount" => 0,
+                "discount" => 0.3,
                 "type" => "gatto",
                 "material" => ["plastica"],
                 "ecoFriendly" => true,
@@ -57,7 +57,7 @@ $products = [
               [
                 "name" => "Croccantini",
                 "price" => 12.49,
-                "discount" => 0,
+                "discount" => 0.3,
                 "type" => "cane",
                 "vegan" => false,
                 "ingredients" => ["carne di pollo", "riso"],
@@ -84,7 +84,7 @@ $products = [
               [
                 "name" => "Salmone in Scatola",
                 "price" => 5.99,
-                "discount" => 0,
+                "discount" => 0.3,
                 "type" => "gatto",
                 "vegan" => false,
                 "ingredients" => ["salmone", "acqua"],

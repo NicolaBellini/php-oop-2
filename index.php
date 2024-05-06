@@ -98,7 +98,12 @@ try {
                 <div class="card-body">
                   <h5 class="card-title"><?php echo $product->name; ?></h5>
                   <p class="card-text">
-                    <?php echo "Price: $" . $product->price . "<br>"; ?>
+                    <?php echo "Price: " . $product->getFormattedPrice();
+                          if ($product->getDiscount() > 0) {
+                            echo " ". "<del>" .$product->price. "</del>";
+                          }
+                          echo "<br>";
+                    ?>
                     <?php echo "Type: " . $product->type . "<br>"; ?>
                     <?php echo "Material: " . implode(", ", $product->getmaterial()) . "<br>"; ?>
                     <?php echo "Eco-Friendly: " . ($product->ecoFriendly ? "Yes" : "No") . "<br>"; ?>
@@ -136,7 +141,12 @@ try {
                 <div class="card-body">
                   <h5 class="card-title"><?php echo $product->name; ?></h5>
                   <p class="card-text">
-                    <?php echo "Price: $" . $product->price . "<br>"; ?>
+                    <?php echo "Price: " . $product->getFormattedPrice();
+                        if ($product->getDiscount() > 0) {
+                          echo " ". "<del>" .$product->price. "</del>";
+                        }
+                        echo "<br>";
+                    ?>
                     <?php echo "Type: " . $product->type . "<br>"; ?>
                     <?php echo "Ingredients: " . implode(", ", $product->ingredients) . "<br>"; ?>
                     <?php echo "Vegan: " . ($product->vegan ? "Yes" : "No") . "<br>"; ?>

@@ -24,6 +24,7 @@ try {
                 $product['img'],
                 $product["ingredients"],
                 $product["vegan"],
+                $product['discount']
 
             );
 
@@ -38,7 +39,8 @@ try {
                 $product['img'],
                 $product["material"],
                 $product["ecoFriendly"],
-                $product["weight"]
+                $product["weight"],
+                $product['discount']
             );
 
             // Aggiunta dell'oggetto Toy all'array $formattedProducts

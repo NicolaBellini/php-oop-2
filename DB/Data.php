@@ -6,6 +6,7 @@ $products = [
            [
                 "name" => "Giocattolo per Cani",
                 "price" => 9.99,
+                "discount" => 0,
                 "type" => "cane",
                 "material" => ["gomma","pelle"],
                 "ecoFriendly" => true,
@@ -15,6 +16,7 @@ $products = [
              [
                 "name" => "Pallina Rimbalzante",
                 "price" => 5.99,
+                "discount" => 0,
                 "type" => "gatto",
                 "material" => ["gomma"],
                 "ecoFriendly" => true,
@@ -24,6 +26,7 @@ $products = [
               [
                 "name" => "Giostra per Gatti",
                 "price" => 12.99,
+                "discount" => 0,
                 "type" => "gatto",
                 "material" => ["plastica"],
                 "ecoFriendly" => true,
@@ -33,6 +36,7 @@ $products = [
               [
                 "name" => "Peluche per Cani",
                 "price" => 14.99,
+                "discount" => 0,
                 "type" => "cane",
                 "material" => ["peluche"],
                 "ecoFriendly" => false,
@@ -44,6 +48,7 @@ $products = [
             [
                 "name" => "Osso",
                 "price" => 7.99,
+                "discount" => 0,
                 "type" => "cane",
                 "vegan" => false,
                 "ingredients" => ["osso di manzo"],
@@ -52,6 +57,7 @@ $products = [
               [
                 "name" => "Croccantini",
                 "price" => 12.49,
+                "discount" => 0,
                 "type" => "cane",
                 "vegan" => false,
                 "ingredients" => ["carne di pollo", "riso"],
@@ -60,6 +66,7 @@ $products = [
              [
                 "name" => "Tonno",
                 "price" => 4.99,
+                "discount" => 0,
                 "type" => "gatto",
                 "vegan" => false,
                 "ingredients" => ["tonno", "brodo di pesce"],
@@ -68,6 +75,7 @@ $products = [
               [
                 "name" => "Pasticcini per Gatti",
                 "price" => 8.49,
+                "discount" => 0,
                 "type" => "gatto",
                 "vegan" => false,
                 "ingredients" => ["carne di pollo", "grano", "erbe aromatiche"],
@@ -76,6 +84,7 @@ $products = [
               [
                 "name" => "Salmone in Scatola",
                 "price" => 5.99,
+                "discount" => 0,
                 "type" => "gatto",
                 "vegan" => false,
                 "ingredients" => ["salmone", "acqua"],
@@ -84,6 +93,7 @@ $products = [
             [
                 "name" => "Croccantini Vegani",
                 "price" => 9.99,
+                "discount" => 0,
                 "type" => "cane",
                 "vegan" => true,
                 "ingredients" => ["riso", "patate", "verdure"],

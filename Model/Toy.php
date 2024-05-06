@@ -6,9 +6,10 @@ class Toy extends Product{
   public $ecoFriendly;
   public $weight;
 
-  public function __construct(string $_name,float $_price,string $_type, string $_img, array $_material, bool $_ecoFriendly, float $_weight)
+  // i pareametri opzionali vanno per ultimi
+  public function __construct(string $_name,float $_price,string $_type, string $_img, array $_material, bool $_ecoFriendly, float $_weight, float $_discount = 0)
   {
-     parent::__construct($_name, $_price, $_type, $_img);
+     parent::__construct($_name, $_price, $_type, $_img, $_discount);
     
      $this-> setMaterial($_material);
      $this->ecoFriendly= $_ecoFriendly;

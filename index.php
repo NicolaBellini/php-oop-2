@@ -10,7 +10,10 @@ $formattedToys = [];
 $formattedFoods = [];
 
 
-foreach ($products as $category => $categoryProducts) {
+// add try cath 
+
+try {
+  foreach ($products as $category => $categoryProducts) {
     foreach ($categoryProducts as $product) {
         if ($category === "foods") {
             // Creazione di un oggetto Food
@@ -43,6 +46,11 @@ foreach ($products as $category => $categoryProducts) {
         }
     }
 }
+
+} catch (Exception $e) {
+  var_dump($e->getMessage());
+}
+
 
 ?>
 
@@ -160,6 +168,8 @@ foreach ($products as $category => $categoryProducts) {
 
   
 </div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 

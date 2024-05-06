@@ -98,7 +98,7 @@ try {
                   <p class="card-text">
                     <?php echo "Price: $" . $product->price . "<br>"; ?>
                     <?php echo "Type: " . $product->type . "<br>"; ?>
-                    <?php echo "Material: " . implode(", ", $product->material) . "<br>"; ?>
+                    <?php echo "Material: " . implode(", ", $product->getmaterial()) . "<br>"; ?>
                     <?php echo "Eco-Friendly: " . ($product->ecoFriendly ? "Yes" : "No") . "<br>"; ?>
                     <?php echo "Weight: " . $product->weight . "<br>"; ?>
                   </p>

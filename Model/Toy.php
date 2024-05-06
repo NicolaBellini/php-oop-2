@@ -2,7 +2,7 @@
 
 class Toy extends Product{
 
-  public $material;
+  private $material;
   public $ecoFriendly;
   public $weight;
 
@@ -10,10 +10,22 @@ class Toy extends Product{
   {
      parent::__construct($_name, $_price, $_type, $_img);
     
-     $this->material= $_material;
+     $this-> setMaterial($_material);
      $this->ecoFriendly= $_ecoFriendly;
      $this->weight= $_weight;
 
   }
 
+
+  public function setMaterial($_material){
+    if(empty($_material)){
+      throw new Exception('i materiali non sono adeguati');
+    }else{
+      $this->material = $_material;
+    }
+  }
+
+  public function getMaterial(){
+    return $this->material;
+  }
 }
